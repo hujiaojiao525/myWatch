@@ -1,0 +1,10 @@
+a{
+    -webkit-transform:rotate(45deg);
+            transform:rotate(45deg);
+}
+
+div{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+}

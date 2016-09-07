@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="content"></div>
+	<script src="../lib/template.js"></script>
+	<script id="test" type="text/html">
+		{{if isAdmin}}
+
+		<h1>{{title}}</h1>
+		<ul>
+			/*{{each   as value i}}
+				<li>索引{{i+1}}:{{value}}</li>
+			{{/each}}*/
+			{{each list}}
+				<li>{{$index}} - {{$value}}
+			{{/each}}
+		</ul>
+		{{/if}}
+
+	</script>
+
+	<script src="../js/text.js"></script>
+</body>
+</html>
